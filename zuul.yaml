@@ -1,6 +1,5 @@
 - job:
     name: hello-world
-    parent: base
     run: playbooks/hello-world.yaml
 
 - project:
