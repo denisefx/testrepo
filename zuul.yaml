@@ -1,8 +1,8 @@
 - job:
-    name: hello-world
+    name: hello-world-test
     run: playbooks/hello-world.yaml
 
 - project:
     check:
       jobs:
-        - hello-world-test
+        - hello-world
