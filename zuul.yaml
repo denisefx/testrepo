@@ -1,0 +1,26 @@
+- pipeline:
+    name: check
+    manager: independent
+    trigger:
+      github:
+        - event: pull_request
+          action:
+            - opened
+            - changed
+            - reopened
+    success:
+      github:
+        status: 'success'
+    failure:
+      github:
+        status: 'failure'
+
+- job:
+    name: hello-world
+    parent: base
+    run: playbooks/hello-world.yaml
+
+- project:
+    check:
+      jobs:
+        - hello-world
