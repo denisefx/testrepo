@@ -1,9 +1,6 @@
 - job:
     name: hello-world
-    nodeset:
-      nodes:
-        - name: container
-          label: ubuntu-jammy
+    description: A simple test job
     run: playbooks/hello-world.yaml
 
 - project:
