@@ -5,4 +5,4 @@
 - project:
     check:
       jobs:
-        - hello-world
+        - hello-world-test
