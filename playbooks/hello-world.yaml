@@ -1,0 +1,5 @@
+- hosts: all
+  tasks:
+    - name: Hello World Task
+      debug:
+        msg: "Zuul is finally talking to my repo!"
