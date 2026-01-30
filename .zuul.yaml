@@ -2,3 +2,4 @@
     check:
       jobs:
         - new-job
+        - c-builder
